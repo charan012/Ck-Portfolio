@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./About.css";
+import homeImage from '/images/About_Prof.jpg';
 
 const About = () => {
   const aboutRef = useRef(null);
@@ -41,7 +42,7 @@ const About = () => {
             <div className="about-image">
               <div className="image-wrapper">
                 <img
-                  src="src/assets/images/About_Prof.jpg"
+                  src={homeImage}
                   alt="Profile"
                   className="profile-image"
                   loading="lazy"

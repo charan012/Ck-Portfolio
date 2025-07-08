@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import "./Navbar.css";
 import React, { useState, useEffect } from "react";
-import logo from "../assets/images/Logo_Design.png";
+import logo from "/images/Logo_Design.png";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Navbar.js";
 

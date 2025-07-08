@@ -29,7 +29,7 @@ body {
 
 
 .home-container {
-    background-image: url('src/assets/images/abstract-line.jpg');
+    background-image: url('/images/abstract-line.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -182,7 +182,7 @@ body {
 
 .quote-wrapper {
     position: relative;
-    background-image: url('src/assets/images/ccclok (1).jpg');
+    background-image: url('/images/ccclok (1).jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -304,6 +304,7 @@ body {
 
     .home-text h1 {
         letter-spacing: 0.05rem;
+        font-family: 'Constantia';
     }
 
     .home-divider {
@@ -344,6 +345,7 @@ body {
 
     .home-text h1 {
         letter-spacing: 0.02rem;
+        font-family: 'Constantia';
     }
 
     .home-btn {

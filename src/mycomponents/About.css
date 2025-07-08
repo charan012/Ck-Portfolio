@@ -6,7 +6,7 @@
 
 
 .about-container {
-  background-image: url("src/assets/images/5.jpg");
+  background-image: url("/images/5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

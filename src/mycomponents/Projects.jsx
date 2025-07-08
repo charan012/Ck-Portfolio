@@ -5,14 +5,14 @@ const Projects = () => {
   const images = [
     {
       id: 1,
-      src: "src/assets/images/photo6.jpg",
+      src: "/images/photo6.jpg",
       title: "Golden hour magic",
       description: "Candid Shots",
       category: "Photos",
     },
     {
       id: 2,
-      src: "src/assets/images/ecomm.jpeg",
+      src: "/images/ecomm.jpeg",
       title: "Online Grocery Platform",
       description: "Client Project",
       category: "Projects",
@@ -20,7 +20,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      src: "src/assets/images/docc.jpg",
+      src: "/images/docc.jpg",
       title: "IT Management System",
       description: "Client Project",
       category: "Projects",
@@ -29,14 +29,14 @@ const Projects = () => {
     },
     {
       id: 4,
-      src: "src/assets/images/photo9.jpg",
+      src: "/images/photo9.jpg",
       title: "Serenity meets sky",
       description: "Photography",
       category: "Photos",
     },
     {
       id: 5,
-      src: "src/assets/images/dddf.jpg",
+      src: "/images/dddf.jpg",
       title: "My Document Editor",
       description: "Task Project",
       category: "Projects",
@@ -44,14 +44,14 @@ const Projects = () => {
     },
     {
       id: 6,
-      src: "src/assets/images/photo2.jpg",
+      src: "/images/photo2.jpg",
       title: "Tranquil Beach scene",
       description: "Photography",
       category: "Blog",
     },
     {
       id: 7,
-      src: "src/assets/images/Dog Resting on Grass (2).png",
+      src: "/images/Dog Resting on Grass (2).png",
       title: "Dog resting on grass",
       description: "Photo Craft",
       category: "Photos",
