@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.css"
 import { Link } from "react-scroll";
-import About from "../mycomponents/About";
-import Projects from "../mycomponents/Projects";
-import Skills from "../mycomponents/Skills";
-import Contact from "../mycomponents/Contact";
+import About from "../mycomponents/About.jsx";
+import Projects from "../mycomponents/Projects.jsx";
+import Skills from "../mycomponents/Skills.jsx";
+import Contact from "../mycomponents/Contact.jsx";
 
 const Home = () => {
   return (

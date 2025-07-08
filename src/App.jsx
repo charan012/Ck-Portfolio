@@ -3,12 +3,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 import Navbar from "./mycomponents/Navbar.jsx";
-import Home from "./pages/Home";
-import About from "./mycomponents/About";
-import Projects from "./mycomponents/Projects";
-import Skills from "./mycomponents/Skills";
-import Contact from "./mycomponents/Contact";
-import Footer from "./mycomponents/Footer";
+import Home from "./pages/Home.jsx";
+import About from "./mycomponents/About.jsx";
+import Projects from "./mycomponents/Projects.jsx";
+import Skills from "./mycomponents/Skills.jsx";
+import Contact from "./mycomponents/Contact.jsx";
+import Footer from "./mycomponents/Footer.jsx";
 
 
 function App() {
