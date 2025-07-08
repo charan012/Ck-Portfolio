@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    background-color: #131916;
+    box-shadow: 0 5px 30px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition: all 0.4s ease;
+}
+
+.nav-menu.scrolled {
+    background-color: rgba(19, 25, 22, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+}
+
+.container-fluid {
+    padding: 0 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.navbar-brand {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0;
+    margin-right: 0;
+}
+
+.logo-img {
+    height: 42px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu-item {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 12px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+}
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #f7e17e;
+    transition: width 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #f7e17e;
+    transform: translateY(-2px);
+}
+
+.menu-item:hover::after {
+    width: 80%;
+}
+
+
+.navbar-toggler {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 8px;
+    margin-left: auto;
+}
+
+.ham {
+    width: 25px;
+    height: 3px;
+    background: #F9F8F7;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+@media (max-width: 991.98px) {
+    .container-fluid {
+        padding: 0 8px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #131916;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-collapse.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .nav-item {
+        margin: 0;
+        width: 100%;
+    }
+
+    .menu-item {
+        padding: 15px 20px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .menu-item::after {
+        display: none;
+    }
+
+    .menu-item:hover {
+        background-color: rgba(255, 204, 0, 0.1);
+        padding-left: 30px;
+    }
+
+    .nav-menu {
+        padding: 10px 0;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 6px;
+    }
+
+    .logo-img {
+        height: 35px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .nav-menu {
+        padding: 8px 0;
+    }
+
+    .logo-img {
+        height: 30px;
+    }
+
+    .navbar-collapse {
+        padding: 15px;
+    }
+
+    .menu-item {
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container-fluid {
+        padding: 0 4px;
+    }
+
+    .logo-img {
+        height: 28px;
+    }
+}

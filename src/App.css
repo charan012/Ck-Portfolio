@@ -1,0 +1,13 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+
+}
+
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+}
